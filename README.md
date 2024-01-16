@@ -1,5 +1,20 @@
 # Data Engineer Workshop 1: Setting up your Data Engineering workspace and tools
 
+Our first Data Engineer workshop builds upon the last exercise at your launch event where you explored what you can do with your A Cloud Guru (ACG) account. Remember you created cloud sandboxes for Azure, AWS and Google Cloud Platform (GCP)? https://learn.acloud.guru/cloud-playground/cloud-sandboxes And also created and logged in to a Window Virtual Machine (VM) using the Windows Remote Desktop Connection app? https://learn.acloud.guru/cloud-playground/cloud-servers
+
+At this first workshop we will build on that first exploration so you can learn how to use both the Windows VM and cloud sandboxes to take part in workshops. We will also do a simple data exercise at the end.
+
+This is a supportive technical onboarding workshop that also gets you familiar with the interactive style of workshops we will have together going forwards. 
+
+**Before you attend the workshop, please make sure you have done the following described in the next section.**
+
+## Before the workshop please ensure you have: 
+
+1. **Tools installed on a work laptop:** Ideally have a work laptop with VS Code, Git, Python, Azure Data Studio and Windows Remote Desktop Connection app installed that can connect to an ACG Windows VM. Or, at the very least, a work laptop with Windows Remote Desktop Connection app installed that can connect to an A Cloud Guru (ACG) Windows Virtual Machine.
+2. **Aptem:** Completed the first two e-learning modules in Unit 1 and their subsequent Data Engineer Pass Descriptor questions:
+    - **1.1 The Uses of Cloud Computing Platforms:** De-mystifies what cloud and on-premises are. Your are then tasked in Aptem to describe briefly your own organisation's use of cloud to evidence Aptem Data Engineer Pass descriptor. 
+    - **1.2 Data Engineering in Your Organisation:** Supports you describing your own organisation's data architectures and their relevant data development frameworks, data engineering tools used, and end data uses cases across organisations. You are then tasked in Aptem to describe these three topics to evidence three Data Engineer Pass descriptors.
+
 ## Key
 
 > 💻 - Activity for you to do <br>
@@ -28,7 +43,7 @@
   - [💻8️⃣ Start cloud sandbox (Azure) and deploy a simple SQL data architecture (~10 mins)](#azure)
   - [💻9️⃣ Query your database with MS recommended tools (~20 mins +)](#tools)
   - [🚀1️⃣0️⃣ Get to know your data with simple SQL (~60m +)](#know)
-- [Workshop Summary](#summary)
+- [Preparation for next workshop](#next)
 
 <a id="outcomes"></a>
 
@@ -739,31 +754,16 @@ FROM SalesLT.SalesOrderDetail;
 
 </details>
 
-<a id="summary"></a>
+<a id="next"></a>
 
-## 11 Workshop Summary
+## 12 Preparation for next workshop
 
 [Back to Contents](#contents)
 
-Congratulations on completing your first workshop! Here's a summary of what we covered:
+In our workshop next month we will start to build on your SQL skills and be covering advanced SQL transformations that are often used and are valuable in Data Engineering. Please make sure you have done the following before that workshop.
 
-MORNING HIGHLIGHTS
+1. If not already done, complete modules 1.1 and 1.2 and the Data Engineer Pass Descriptor questions after them.
 
-- Created and connected to a Windows VM via Windows Remote Desktop, exploring IaaS.
-- Installed and configured VS Code, including PowerShell-based extension automation.
-- Installed Git, learning version control essentials.
-- Repository Cloning: Cloned the workshop repository in VS Code for easy material access.
+2. The next workshop is a detailed SQL workshop. Complete SQL modules 2.1 and 2.2 beforehand that are SQL focussed.
 
-AFTERNOON INSIGHTS
-
-- Launched and navigated an Azure cloud sandbox, creating an Azure SQL server and database. You connected to this database using various methods and executed simple SQL queries to have hands-on experience with Platform as a Service (PaaS).
-
-KEY OUTCOMES AND ACTIVITIES
-
-- Covered Data Engineer Pass descriptors such as cloud platforms, version control, data store handling, and data querying.
-
-🚀 OPTIONAL GOING FURTHER
-
-- Learned how to set Git credentials in VS Code to contribute to GitHub repositories.
-- Explored creating and connecting remotely to a Linux VM from Windows.
-- Installed and tested Docker in a Linux VM
+3. To keep on track up with your general data engineer learning, also complete modules 2.3 and 2.4  on data normalisation and data store types and the Data Engineer Pass Descriptor questions after them.
