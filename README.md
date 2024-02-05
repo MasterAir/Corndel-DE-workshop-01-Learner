@@ -20,6 +20,7 @@ This is a supportive technical onboarding workshop that also gets you familiar w
 > 💻 - Activity for you to do <br>
  ❓ - A question for you and your group <br>
 ℹ Important note (e.g. data security reminder) <br>
+↩ After clicking a footnote in text, use this arrow to return <br>
 🎉 - Well done, completing the activities up to this point is all you need to do in the workshop. If time allows, stretch yourself further with the rocker activities described next<br>
 🚀 - A going further stretch activity only if your time allows <br>
 
@@ -59,7 +60,7 @@ This is a supportive technical onboarding workshop that also gets you familiar w
 
 <a id="descriptors"></a>
 
-## Data Engineer Pass Descriptors* Targeted today
+## Data Engineer Pass Descriptors Targeted today
 
 [Back to Contents](#contents)
 
@@ -108,7 +109,6 @@ Having set up your data engineering desktop in the morning, in the afternoon we 
 
 ## 💻 Breakout room guidelines
 
-```
 1. Keep your camera on in the breakout room.
 2. Introduce yourself to anyone in the room you have not met before.
 3. Start each exercise by discussing any questions marked with "❓".
@@ -119,7 +119,7 @@ Having set up your data engineering desktop in the morning, in the afternoon we 
 8. Be a good breakout room participant by contributing and staying positive
 9. Encourage everyone's participation.
 10. Respect others' opinions and viewpoints.
-```
+
 
 <a id="vm"></a>
 
@@ -240,6 +240,18 @@ print(sys.version)
 
 | ![python](/images/python.png) |
 |:--:|
+
+6. In later workshops, we will install Python packages directly into this Python environment and into something called virtual Python environments. In order to be able to install new Python packages, we need to edit a Windows environment variable called Path that will tell the operating system where to find the Python executable and associated scripts so that Python commands and packages can be executed without specifying the full path. In the Search box in the Windows task bar search for environment and select `Edit the system environment variables` then: <br>
+    1️⃣ As shown below click on the `Environment Variables` button to open the next dialog. <br>
+    2️⃣ Select the `Path` environment variable. <br>
+    3️⃣ Click the `Edit` button to open the next dialog. <br>
+    4️⃣ Click the `New` button and add the following paths. Before you add them, check that exact folder exists using Windows Explorer, the last folder name will be different with different versions of python:<br>`C:\Users\cloud_user\AppData\Local\Programs\Python\Python312` <br>
+    Click the `New` button again add the following path as well: <br>`C:\Users\cloud_user\AppData\Local\Programs\Python\Python312\Scripts` <br>
+  
+| ![Clone](/images/path.png) |
+|:--:|
+
+
 
 [^8]: The Python VS Code extension: <https://marketplace.visualstudio.com/items?itemName=ms-python.python>
 [^9]: The Jupyter VS Code extension: <https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter>
