@@ -1,0 +1,28 @@
+{
+    "name": "Python 3 with useful data libraries",
+    "image": "mcr.microsoft.com/devcontainers/python:3.8", // Docker image for Python 3.8 from https://github.com/devcontainers/images/tree/main/src/python
+    "settings": { 
+      "terminal.integrated.shell.linux": "/bin/bash" // Sets default shell to bash in the integrated terminal
+    },
+    "extensions": [
+        "ms-mssql.sql-database-projects-vscode",
+        "ms-mssql.mssql",
+        "ms-azuretools.vscode-docker",
+        "github.vscode-pull-request-github",
+        "eamodio.gitlens",
+        "aykutsarac.jsoncrack-vscode",
+        "ms-toolsai.jupyter",
+        "ms-python.python",
+        "donjayamanne.python-extension-pack",
+        "mechatroner.rainbow-csv",
+        "ms-vscode-remote.remote-ssh",
+        "ms-vscode.remote-explorer",
+        "tomoki1207.pdf",
+        "ms-python.black-formatter",
+        "ms-python.flake8"
+      ],
+    "forwardPorts": [8888], // Forward port 8888 for Jupyter Notebook server
+    "postCreateCommand": "pip install notebook==7.0.7 pandas==2.0.3 pyarrow==15.0.0 seaborn==0.13.2 sweetviz==2.3.1 && sudo apt-get update && sudo apt-get install -y azure-cli awscli google-cloud-sdk sqlcmd", // Command to install specific versions of key Python packages for data exploration
+    "remoteUser": "vscode" // Specifies 'vscode' as the remote user for the development container
+  }
+  
