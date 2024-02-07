@@ -607,7 +607,7 @@ Below are the steps to create a basic data architectureℹ️ of a SQL server an
 [^20]: Strong password guidance: <https://learn.microsoft.com/en-us/sql/relational-databases/security/strong-passwords?view=sql-server-ver16>
 
 > ℹ️ While it deploys, note you have just deployed a cloud PaaS resource using a template where its size, location, and IP access rules are already specified for you. You learned about PaaS in your first e-learning module. The template is written in JSON, a universal data format ideal for specifying cloud resource attributes. Its readable yet structured nature enables precise and automated cloud provisioning. Follow this link to see the structure of the JSON file visualised:
-<https://jsoncrack.com/editor?json=https://raw.githubusercontent.com/billster45/taxi_trip_nyc/main/azure-sql-db-and-server.json>
+<https://jsoncrack.com/editor?json=https://raw.githubusercontent.com/Corndel/corndel-datasets/main/azure_arm_templates/ARM-template-azure-sql-db-and-server.json>
 
 5. When you see the message `Your deployment is complete`, click on the `Go to your resource group` blue button. Then select the Adventure works database you should see in the list (as shown below).
 

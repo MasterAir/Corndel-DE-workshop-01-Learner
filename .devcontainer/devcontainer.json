@@ -22,7 +22,7 @@
         "ms-python.flake8"
       ],
     "forwardPorts": [8888], // Forward port 8888 for Jupyter Notebook server
-    "postCreateCommand": "pip install notebook==7.0.7 pandas==2.0.3 pyarrow==15.0.0 seaborn==0.13.2 sweetviz==2.3.1 && sudo apt-get update && sudo apt-get install -y azure-cli awscli google-cloud-sdk sqlcmd", // Command to install specific versions of key Python packages for data exploration
+    "postCreateCommand": "pip install notebook==7.0.7 pandas==2.0.3 pyarrow==15.0.0 seaborn==0.13.2 sweetviz==2.3.1", // Command to install specific versions of key Python packages for data exploration
     "remoteUser": "vscode" // Specifies 'vscode' as the remote user for the development container
   }
   
