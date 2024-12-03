@@ -42,8 +42,9 @@ This is a supportive technical onboarding workshop that also gets you familiar w
   - [🚀7️⃣ Install and test Docker in Linux Virtual Machine (~30 mins)](#docker)
 - [AFTERNOON - Using Cloud Sandboxes](#afternoon)
   - [💻8️⃣ Start cloud sandbox (Azure) and deploy a simple SQL data architecture (~10 mins)](#azure)
-  - [💻9️⃣ Query your database with MS recommended tools (~20 mins +)](#tools)
-  - [🚀1️⃣0️⃣ Get to know your data with simple SQL (~60m +)](#know)
+  - [💻9️⃣ Setup a windows server VM in your Azure sandbox](#azureVM)
+  - [💻1️⃣0️⃣ Query your database with MS recommended tools (~20 mins +)](#tools)
+  - [🚀1️⃣1️⃣ Get to know your data with simple SQL (~60m +)](#know)
 - [Preparation for next workshop](#next)
 
 <a id="outcomes"></a>
@@ -625,6 +626,31 @@ Below are the steps to create a basic data architectureℹ️ of a SQL server an
 |:--:|
 
 > ℹ️ In larger organisations, a data engineer may be less likely to create resources for live production use and instead, it would be the responsibility of more specialised roles such as DevOps engineers or cloud architects. These professionals often have deeper expertise in managing production environments, ensuring high availability, scalability, and compliance with regulatory requirements. However, it is still a useful skill to build resources in development environments, but remember, these are not suited for production due to security risks. For production, stringent security measures are necessary to protect sensitive data and comply with industry standards. This includes implementing strong firewall rules, data encryption (both in transit and at rest), and regular access and activity audits. For a detailed guide on best practices, particularly for a production setup, refer to: [Azure SQL Database Security Best Practices](https://learn.microsoft.com/en-gb/azure/azure-sql/database/security-best-practice?view=azuresql).
+
+<a id="azureVM"></a>
+
+### 💻9️⃣ Setup a windows server VM in your Azure sandbox
+
+Due to the way that the organisation's networking is setup it is not possible to connect directly to SQL servers outside of the corporate network. If using a work computer, you need to setup a virtual machine to install the tools in the next section on. That way the instructions in [section 10](#tools) will work as written.
+
+1. In your Azure sandbox that you set up in the previous section. Return to the [home](https://portal.azure.com/home) screen and click the Virtual Machines icon in the azure services section at the top of the page.
+
+2. In the Virtual Machines page click the blue Create icon.
+
+3. In the following page, select the available resource group e.g. `1-12345adfe-playground-sandbox`
+
+4. Choose a name for your machine -- it does not matter what it is e.g. MyVirtualMachine, Fred, OptimusPrime.
+
+5. Select `Windows Server 2022 Datacenter: Azure Edition Hotpatch - x64 Gen2` for the Image.
+
+6. Select a username and password - use a complex password (12 characters, 1+ capital, lowercase, symbol, number) or Azure gets grumpy
+
+All the other default options are fine. 
+
+7. Once the VM is deployed you can connect to it using Remote Desktop Protocol - as we did in the morning session. Select the Public IP address from the Azure Sandbox for the computer's name in RDP.
+
+If you follow the instructions in the "tools" section, but install software on this new virtual machine you should not have any connectivity issues.
+
 
 <a id="tools"></a>
 
