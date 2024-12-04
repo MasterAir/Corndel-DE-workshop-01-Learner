@@ -631,9 +631,9 @@ Below are the steps to create a basic data architectureℹ️ of a SQL server an
 
 ### 💻9️⃣ Setup a windows server VM in your Azure sandbox
 
-Due to the way that the organisation's networking is setup it is not possible to connect directly to SQL servers outside of the corporate network. If using a work computer, you need to setup a virtual machine to install the tools in the next section on. That way the instructions in [section 10](#tools) will work as written.
+Due to the way that the organisation's networking is setup it is not possible to connect directly to SQL servers outside of the corporate network as the company's firewall is blocking the connection. If using a work computer, you need to setup a virtual machine to install the tools in the next section on. That way the instructions in [section 10](#tools) will work as written. The virtual machine that is setup here is running the Windows Operating System and you will have administrator access, so you can install the tools needed below (e.g. VSCode, SQL Server Manager, Azure Data Studio). This server is not restricted by the corporate firewall, so can connect to the database setup in the previous section.
 
-1. In your Azure sandbox that you set up in the previous section. Return to the [home](https://portal.azure.com/home) screen and click the Virtual Machines icon in the azure services section at the top of the page.
+1. In your Azure sandbox that you set up in the previous section. Return to the [home](https://portal.azure.com/home) screen and click the Virtual Machines icon in the azure services section at the top of the page, then Azure Virtual Machine in the popup menu.
 
 2. In the Virtual Machines page click the blue Create icon.
 
@@ -647,7 +647,7 @@ Due to the way that the organisation's networking is setup it is not possible to
 
 All the other default options are fine. 
 
-7. Once the VM is deployed you can connect to it using Remote Desktop Protocol - as we did in the morning session. Select the Public IP address from the Azure Sandbox for the computer's name in RDP.
+7. Once the VM is deployed you can connect to it using Remote Desktop Protocol - as we did in the morning session. To do this use the "Remote Desktop Connection" application on your own windows laptop. Select the Public IP address from the Azure Sandbox for the computer's name in RDP. 
 
 If you follow the instructions in the "tools" section, but install software on this new virtual machine you should not have any connectivity issues.
 
